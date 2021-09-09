@@ -13,6 +13,10 @@
     flex-wrap: wrap;
 }
 
+.menu-mobile{
+    display: none;
+}
+
 header{
     background-color: white;
     padding: 10px 0;
@@ -38,7 +42,7 @@ header{
     font-size: 14px;
     text-decoration: none;
     margin-right: 20px;
-    /*transition: 0.1s;*/
+    transition: 0.4s;
 }
 
 .menu a:hover{
@@ -64,7 +68,8 @@ Section Main
 
 section.main{
     background-image: url('img/pexels-wouter-de-jong-571169.jpg');
-    min-height: 800px;
+    /*min-height: 800px;*/
+    padding: 70px 0;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -73,7 +78,7 @@ section.main{
 
 .main__cta{
     width: 100%;
-    margin: 40px 0;
+    margin: 60px 0;
     text-align: center;
 }
 
@@ -102,10 +107,118 @@ section.main{
 .main__cta button:hover{
     Background-color: #124265;
     color: white;
-    /*transition: 0.1s;*/
+    transition: 0.4s;
 }
 
 .diferenciais{
     display: flex;
+    flex-wrap: wrap;
 }
 
+.diferencial-single{
+    border-radius: 10px;
+    background-color: white;
+    width: 23%;
+    margin-right: 2%;
+    padding: 50px 20px;
+}
+
+.diferencial-single i{
+    color: #124265;
+    font-size: 23px;
+}
+
+.diferencial-single h2{
+    color:#124265;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+diferencial-single p{
+    color: gray;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+section.sobre{
+    padding: 80px 0;
+}
+
+.chamada-sobre{
+    width: 100%;
+    text-align: center;
+}
+
+.chamada-sobre h2{
+    color:#124265;
+    text-transform: uppercase;
+}
+
+.chamada-sobre p{
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0;
+}
+
+.conteudo-sobre{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.conteudo-sobre p{
+    width: 48%;
+    margin-right: 2%;
+    color: #444444;
+}
+
+.conteudo-sobre i{
+    color: #007bff
+}
+
+.conteudo-sobre span{
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+}
+
+section.conquistas{
+    background-color: #f8fbfe;
+    padding: 20px 0;
+}
+
+.conquista-single{
+    width: 22%;
+    margin-right: 3%;
+    text-align: center;
+    color:#124265;
+}
+
+.conquista-single h2{
+
+}
+
+
+@media screen and (max-width: 768px){
+    .diferencial-single{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .logo{
+        width: 20%;
+    }
+    .menu{
+        display: none;
+    }
+    .menu-mobile{
+        width: 80%;
+        text-align: right;
+        display: block;
+    }
+    .menu-mobile i{
+        cursor: pointer;
+        font-size: 23px;
+        margin-top: 8px;
+    }
+    .conteudo-sobre p{width: 100%; margin: 20px 20px;}
+}
