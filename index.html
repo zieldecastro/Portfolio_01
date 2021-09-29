@@ -29,7 +29,12 @@
                     </a>   
                 </div><!--menu-->
                 <div class="menu-mobile">
-                    <i class="fas fa-bars"></i>
+                <i class="fas fa-bars menu-mobile-icon"></i> 
+                <div class="menu-items"> 
+                    <a href="">Home</a>
+                    <a href="">Sobre</a>
+                    <a href="">Contato</a>
+                </div> 
                 </div>
             </div><!--center-->
         </header>
@@ -111,8 +116,37 @@
            </div>
        </section>
 
+       <section class="sobre-empreendedor">
+           <div class="center">
+               <img class="sobre-empreendedor-img" src="/img/pexels-david-alberto-carmona-coto-1151418.jpg" />
+               <div class="sobre-empreendedor-content">
+                   <h2>Lorem ipsum de testes</h2>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet nulla at nulla pharetra, eu ultrices justo tempus. Fusce vel elit malesuada, blandit purus non, molestie justo. Nulla dignissim ipsum diam, et bibendum nisl pretium nec. Fusce in elementum ex. Curabitur vel suscipit erat. Cras eget libero maximus, vestibulum ipsum nec, sodales libero. Morbi facilisis. Praesent a nisi accumsan, fringilla orci non, molestie est.</p>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque aliquet nulla at nulla pharetra, eu ultrices justo tempus. Fusce vel elit malesuada, blandit purus non, molestie justo. Nulla dignissim ipsum diam, et bibendum nisl pretium nec. Fusce in elementum ex. Curabitur vel suscipit erat. Cras eget libero maximus, vestibulum ipsum nec, sodales libero. Morbi  Pellentesque ultricies elit vitae libero laoreet ornare. Maecenas scelerisque et ante et facilisis. Praesent a nisi accumsan, fringilla orci non, molestie est.</p>
+               </div>
+           </div><!--center-->
+       </section><!--sobre-empreendedor-->
+
 
 
 <script src="https://kit.fontawesome.com/16544f2866.js" crossorigin="anonymous"></script>
-    </body>
+<script>
+
+   var el = document.querySelector('.menu-mobile-icon');
+
+   el.addEventListener('click',()=>{
+       //Mostrar o menu mobile
+       var menuItems = document.querySelector('.menu-items');
+       if(menuItems.classList.contains('show')){
+           menuItems.classList.add('hide');
+           menuItems.classList.remove('show');
+       }else{
+           menuItems.classList.add('show');
+           menuItems.classList.remove('hide');
+       }
+   });
+
+</script>    
+
+</body>
 </html>

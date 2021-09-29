@@ -195,9 +195,63 @@ section.conquistas{
 }
 
 .conquista-single h2{
-
+     font-size: 30px;
 }
 
+.menu-items {
+    position: absolute;
+    left: 0;
+    top: 60;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    border-bottom: 2px solid blue;
+    display: block;
+    opacity: 0;
+    transition: 1s;
+}
+
+.menu-items.show{
+    opacity: 1;
+}
+
+.menu-items.hidde{
+    opacity: 0;
+}
+
+.menu-items a{
+    display: block;
+    text-decoration: none;
+    color: blue;
+}
+
+section.sobre-empreendedor{
+    padding: 40px 0;
+}
+
+.sobre-empreendedor-img{
+    width: 50%;
+    margin: auto;
+}
+
+.sobre-empreendedor-img img{max-width: 100%;}
+
+
+.sobre-empreendedor-content{
+    width: 50%;
+    padding: 0 50px;
+}
+
+.sobre-empreendedor-content h2{
+    color: #124265;
+    margin-bottom: 20px;
+}
+
+.sobre-empreendedor-content p{
+    color: #444;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
 
 @media screen and (max-width: 768px){
     .diferencial-single{
